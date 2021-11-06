@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--环境设置-->
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/x-icon" href="index.ico">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="js/load.js"></script>
+		<meta charset="UTF-8">
+		<meta name="Description" content="一个不成熟的网址导航">
+		<title>WSPVI-beta</title>
+	</head>
+ 
+
+	<body>
+		<style>
+			ul{list-style: none;}
+			.container{display: inline;}
+			.search{display: none;}
+			.about{display: none;}
+			.url1{display: none;}
+		</style>
+
+		<!--顶部导航栏-->
+		<div class="top">
+
+			<!--一级导航栏菜单-->
+        	<ul>
+            	<li style="float:left"><a onclick="loadmain()" title="点击回到主页"><i class="fa fa-home"></i>  主页</a></li>
+            	<li><a onclick="loadsearch()" title="点击进入搜索界面"><i class="fa fa-search"></i>  搜索</a></li>
+            	<li><a title="来自各种渠道的h5/js小游戏"><i class="fa fa-gamepad"></i>  游戏</a>
+					<!--二级菜单-->
+					<ul>
+              			<li><a href="smallgames/turnonthelights.html" target="_blank"><i class="fa fa-lightbulb-o"></i>  点灯</a></li>
+	      				<li><a href="smallgames/2048-zh-cn/2048-zh-cn.html" target="_blank"><i class="fa fa-cube"></i> 2048</a></li>
+		     			<li><a href="smallgames/tf/index.html" target="_blank"><i class="fa fa-fort-awesome"></i>  塔防</a></li>
+		     			<li><a href="smallgames/blockclick/blockclick.html" target="_blank"><i class="fa fa-delicious"></i>  别踩</br>白块儿</a></li>
+             		</ul>
+            	</li>
+            	<li><a title="我在社交媒体上的空间"><i class="fa fa-address-card"></i>  空间</a>
+					<!--二级菜单-->
+           			 <ul>
+              			<li><a href="https://user.qzone.qq.com/1765538384/infocenter" target="_blank">QQ空间</a></li>
+              			<li><a href="https://space.bilibili.com/567626166" target="_blank">BiliBili空间</a></li>
+              			<li><a href="https://music.163.com/#/artist?id=36703174" target="_blank">网易云歌手页</a></li>
+            		</ul>
+           		</li> 
+              	<li style="float:right"><a><i class="fa fa-cogs"></i>  其他</a>
+              		<ul>
+                		<li><a onclick="loadabout()" title="有关网站的信息"><i class="fa fa-info"></i>  关于</a></li>
+		        		<li><a title="占位符，敬请期待"><i class="fa fa-cog fa-spin"></i>  设置</a></li>
+		      			<li><a href="pad.html" title="在手机和电脑模式之间切换"><i class="fa fa-mobile-phone"></i>  PAD</a></li>
+	          		</ul>
+              	</li>
+        	</ul>
+      	</div>
+
+		<!---------------------------
+		临时信息粘贴区（仅为编辑方便）
+
+
+
+
+
+		---------------------------->
+
+		<!--网址和链接(隶属于"网址"菜单)-->
+	  	<div class="container" id="main">
+
+			<!--测试：侧边栏-->
+			<div class="float-right">
+				<a class="all" onclick="loadall()" title="全部显示"><i class="fa fa-refresh"></i></a>
+				<a class="learn" onclick="loadlearn()" title="学习"> <i class="fa fa-book"></i></a>
+				<a class="tool" onclick="loadtool()" title="工具&网盘"><i class="fa fa-wrench"></i></a>
+				<a class="fun" onclick="loadfun()" title="游戏&娱乐"><i class="fa fa-gamepad"></i></a>
+				<a class="naw" onclick="loadnaw()" title="课余主业等"><i class="fa fa-tags"></i></a>
+			</div>
+
+		  	<div id="learn">
+			<ul>
+	    		<li><h4><i class="fa fa-book"></i>  学习</h4></li>
+                <li><a href="https://www.runoob.com" target="_blank">菜鸟教程</a></li>
+				<li><a href="http://wap.cdn.liangtv.cn/special/classroom-in-the-air/#/page/1247618?title=%E5%88%9D%E4%B8%AD" target="_blank">广西云-初中</a></li>
+				<li><a href="https://gxgl.kehou.com/index.htm" target="_blank">桂林名师云课堂</a></li>
+                <li><a href="https://www.zhixue.com" target="_blank">智学网</a></li>
+				<li><a href="http://allhistory.com/" target="_blank">全历史</a></li>
+				<li><a href="https://www.51voa.com/" target="_blank">VOA美国之声</a></li>
+				<li><a href="http://lib.xcz.im/library" target="_blank">古诗词</a></li>
+				<li><a href="https://fanyi.youdao.com/" target="_blank">有道词典</a></li>
+      		</ul>
+			</div>
+
+			<div id="tool">
+	  		<ul>
+	    		<li><h4><i class="fa fa-wrench"></i>  工具、网盘</h4></li>
+				<li><a href="https://tool.oschina.net/commons?type=3" target="_blank">常用对照表</a></li>
+				<li><a href="http://www.alltoall.net/" target="_blank">音频格式转换</a></li>
+				<li><a href="https://www.pan131.com" target="_blank">网盘搜索</a></li>
+				<li><a href="https://cilixingqiu.co" target="_blank">磁力星球</a></li>
+				<li><a href="https://www.geogebra.org/geometry" target="_blank">几何画板</a></li>
+				<li><a href="https://www.zybang.com/static/question/m-calculator/m-calculator.html"  target="_blank">计算器</a></li>
+				<li><a href="https://msdn.itellyou.cn/" target="_blank">MSDN</a></li>
+				<li><a href="https://sc.chinaz.com/" target="_blank">站长素材</a></li>
+				<li><a href="https://home.ctfile.com/" target="_blank">城通网盘</a></li>
+				<li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
+	  		</ul>
+			</div>
+
+			<div id="fun">
+			<ul>
+	    		<li><h4><i class="fa fa-gamepad"></i>  游戏和娱乐</h4></li>
+				<li><a href="http://v.qq.com/" target="_blank">腾讯视频</a></li>
+            	<li><a href="https://www.hifini.com/" target="_blank">音乐磁场</a></li>
+				<li><a href="https://minecraft.fandom.com/" target="_blank">Minecraft Wiki</a></li>
+            	<li><a href="http://www.mcbbs.net/" target="_blank">我的世界中文论坛</a></li>
+				<li><a href="https://www.bilibili.com/" target="_blank">BiliBili</a></li>
+				<li><a href="http://scp-wiki-cn.wikidot.com/main" target="_blank">SCP基金会</a></li>
+				<li><a href="https://music.163.com" target="_blank">网易云音乐</a></li>
+				<li><a href="https://y.qq.com/" target="_blank">QQ音乐</a></li>
+				<li><a href="https://www.kugou.com/" target="_blank">酷狗音乐</a></li>
+				<li><a href="https://music.qier222.com/" target="_blank">YesPlayMusic</a></li>
+      		</ul>
+			</div>
+
+			<div id="naw">
+	  		<ul>
+	    		<li><h4><i class="fa fa-tags"></i>  课余主业、时事、邮箱</h4></li>
+            	<li><a href="https://www.duitang.com/" target="_blank">堆糖</a></li>
+				<li><a href="https://music.163.com/nmusician/web/index#/" target="_blank">网易音乐人</a></li>
+				<li><a href="https://member.bilibili.com/platform/upload-manager/article" target="_blank">B站创作中心</a></li>
+				<li><a href="https://github.com">Github</a></li>
+                <li><a href="https://news.163.com.cn" target="_blank">网易新闻</a></li>
+                <li><a href="https://weibo.com" target="_blank">新浪微博</a></li>
+				<li><a href="https://www.cctv.com/" target="_blank">央视网</a></li>
+            	<li><a href="https://mail.163.com/" target="_blank">163邮箱</a></li>
+            	<li><a href="https://mail.qq.com" target="_blank">QQ邮箱</a></li>
+	  		</ul>
+			</div>
+		</div>
+
+		<!--搜索菜单的引用(即调用其他搜索引擎)-->
+		<div id="ss">
+
+			<div class="search" id="search">
+				<!--<input type="text" id="jumpto" value="" placeholder="输入网址"><button type="submit" value="跳转" onclick="jumpto()">-->
+				
+				<script>
+					function jumpto()
+					var utext=document.getElementsById("jumpto")
+					window.onload=utext.value
+				</script>
+
+				<p> </p>
+				<p> </p>
+				<p> </p>
+				<p> </p>
+				<!--FORM搜索框定义区 起始-->
+				<FORM name="f_g1" onsubmit="return(s_1())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Google搜索(需翻墙)">        <button type="submit" class="btn btn-default" onclick="s_1()">谷歌</button>
+					</div>
+		  		</form>
+	
+				<FORM name="f_g2" onsubmit="return(s_2())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="baidu搜索">        <button type="submit" class="btn btn-default" onclick="s_2()">百度</button>
+					</div>
+		  		</form>
+	
+				<FORM name="f_g3" onsubmit="return(s_3())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="sougou搜索">        <button type="submit" class="btn btn-default" onclick="s_3()">搜狗</button>
+					</div>
+		  		</form>
+	
+				<FORM name="f_g4" onsubmit="return(s_4())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="souku搜索">        <button type="submit" class="btn btn-default" onclick="s_4()">优酷</button>
+					</div>
+		  		</form>
+	
+				<FORM name="f_g5" onsubmit="return(s_5())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Bing搜索">        <button type="submit" class="btn btn-default" onclick="s_5()">必应</button>
+					</div>
+		  		</form>
+	
+				<FORM name="f_g6" onsubmit="return(s_6())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="百度图片搜索">        <button type="submit" class="btn btn-default" onclick="s_6()">图片</button>
+					</div>
+		  		</form>
+	
+	
+				<FORM name="f_g7" onsubmit="return(s_7())" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+			  			<input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Yandex搜索">        <button type="submit" class="btn btn-default" onclick="s_7()">Yandex</button>
+					</div>
+		  		</form>
+				<!--FORM搜索框定义区 结束-->
+
+				<script src="js/search.js"></script>
+	
+			</div>
+		
+			<div class="url1" id="su">
+				<p>暂时只做了这几个...</p>
+				<ul>
+					<li><h4><i class="fa fa-send"></i>   直接跳转到搜索引擎</h4></li>
+					<li><a href="https://m.so.com/" target="_blank"><i class="fa fa-search"></i> 360搜索</a></li>
+					<li><a href="https://www.baidu.com/" target="_blank"><i class="fa fa-search"></i> 百度搜索</a></li>
+					<li><a href="https://www.sogou.com" target="_blank"><i class="fa fa-search"></i>  搜狗搜索</a></li>
+					<li><a href="https://cn.bing.com" target="_blank"><i class="fa fa-search"></i>  必应搜索</a></li>
+					<li><a href="https://yandex.com" target="_blank"><i class="fa fa-search"></i>  Yandex搜索</a></li>
+					<li><a href="https://www.google.com" target="_blank"><i class="fa fa-search"></i>  谷歌搜索(需翻墙)</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="about" id="about">
+			<p><h4>Copyright © 2020-<a id="copyear">2020</a> <a title="向我发送邮件" href="mailto:&@111;&@116;&@121;&@97;&@110;&@103;&@109;&@97;&@108;&@101;&@50;&@64;&@113;&@113;&@46;&@99;&@111;&@109" target="_blank">风擎天下</h4></a></p>
+			<p><h4>未经许可请勿转载!</h4></p>
+			<p>本网站一切解释权归本人所有</p>
+			<p>本网站完全开源，详情点<a title="代码于Github上托管" href="https://github.com/Windy-Secker/WSPVI-beta">这里</a></p>
+			<p>作者还在学习当中,如有不足请多指教</p>
+			<p>若主页加载不正常，点击右下角刷新图标即可</p>
+		</div>
+	
+	
+		<!--网站水印（第一次用JavaScript）-->
+		<div class="img">
+
+			<div style="Z-INDEX: 99; POSITION: absolute" id=img>
+				<a title="水印，点击隐藏" onclick="disappear()">
+					<IMG alt=img src="img/watermarks.png" width=120 height=120>
+				</a>
+			</div>
+
+			<SCRIPT src="js/watermarks.js"></script>
+
+		</div>
+
+		<!--版权声明-->
+	  	<div class="footer">
+		  	Version 
+			<a id=version title="WSPVI-beta testing version">0.1.0</a>  
+			<i class="fa fa-certificate"></i>  
+			Copyright <i class="fa fa-copyright"></i> 
+			<a id="copyear">2020</a> 
+			<a title="向我发送邮件" href="mailto:&@111;&@116;&@121;&@97;&@110;&@103;&@109;&@97;&@108;&@101;&@50;&@64;&@113;&@113;&@46;&@99;&@111;&@109" target="_blank">风擎天下</a>
+            <script src="js/num.js"></script>
+        </div>
+	</body>
+</html>
