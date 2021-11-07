@@ -4,7 +4,7 @@
 	<!--环境设置-->
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" type="image/x-icon" href="index.ico">
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link id="ci" rel="stylesheet" type="text/css" href="stylesheets/s1.css">
 		<script src="js/load.js"></script>
 		<meta charset="UTF-8">
 		<meta name="Description" content="一个不成熟的网址导航">
@@ -19,6 +19,7 @@
 			.search{display: none;}
 			.about{display: none;}
 			.url1{display: none;}
+			.ini{display: none;}
 		</style>
 
 		<!--顶部导航栏-->
@@ -48,8 +49,8 @@
               	<li style="float:right"><a><i class="fa fa-cogs"></i>  其他</a>
               		<ul>
                 		<li><a onclick="loadabout()" title="有关网站的信息"><i class="fa fa-info"></i>  关于</a></li>
-		        		<li><a title="占位符，敬请期待"><i class="fa fa-cog fa-spin"></i>  设置</a></li>
-		      			<li><a href="index.html" title="在手机和电脑模式之间切换"><i class="fa fa-mobile-phone"></i>  COM</a></li>
+		        		<li><a title="设置网页主题" onclick="loadini()"><i class="fa fa-cog fa-spin"></i>  设置</a></li>
+		      			<li><a href="index.html" title="在手机和电脑模式之间切换"><i class="fa fa-desktop"></i>COM</a></li>
 	          		</ul>
               	</li>
         	</ul>
@@ -222,8 +223,87 @@
 			<p>作者还在学习当中,如有不足请多指教</p>
 			<p>若主页加载不正常，点击右下角刷新图标即可</p>
 		</div>
-	
-	
+
+		<!--（ 阳 间 设 置 ）-->
+		<div class="ini" id="ini">
+			<script src="js/ini.js"></script>
+			<style>
+				/*图片廊样式*/
+				.img1 {
+				top:20px;
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 180px;
+				}
+			
+				.img1:hover {
+				border: 1px solid #777;
+				}
+			
+				.img1 img {
+				width: 100%;
+				height: auto;
+				}
+			
+				div.desc {
+				padding: 15px;
+				text-align: center;
+				}
+
+				div.responsive{
+				display: inline-block;
+				top:5%;
+				margin-top: 5%;
+				}
+			</style>
+
+			<div class="responsive" onclick="ini1()">
+				<div class="img1">
+					<a onclick="ini1()">
+						<img src="img/s1.png" width="10%" height="10%">
+					</a>
+					<div class="desc">护眼绿色</div>
+				</div>
+			</div>
+
+			<div class="responsive" onclick="ini2()">
+				<div class="img1">
+					<a onclick="ini2()">
+						<img src="img/s2.png" width="10%" height="10%">
+					</a>
+					<div class="desc">清新蓝色</div>
+				</div>
+			</div>
+
+			<div class="responsive" onclick="ini3()">
+				<div class="img1">
+					<a onclick="ini3()">
+						<img src="img/s3.png" width="10%" height="10%">
+					</a>
+					<div class="desc">辉煌金色</div>
+				</div>
+			</div>
+
+			<div class="responsive" onclick="ini4()">
+				<div class="img1">
+					<a onclick="ini4()">
+						<img src="img/s4.png" width="10%" height="10%">
+					</a>
+					<div class="desc">温馨粉色</div>
+				</div>
+			</div>
+
+			<div class="responsive" onclick="ini5()">
+				<div class="img1">
+					<a onclick="ini5()">
+						<img src="img/s5.png" width="10%" height="10%">
+					</a>
+					<div class="desc">神秘紫色</div>
+				</div>
+			</div>
+		</div>
+
 		<!--网站水印（第一次用JavaScript）-->
 		<div class="img">
 
